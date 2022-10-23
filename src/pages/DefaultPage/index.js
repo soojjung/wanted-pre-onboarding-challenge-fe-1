@@ -15,8 +15,10 @@ const DefaultPage = () => {
 export default DefaultPage;
 
 const MainWrapper = styled.div`
-  // display: flex;
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
   width: 100%;
 
   @media (min-width: 900px) {

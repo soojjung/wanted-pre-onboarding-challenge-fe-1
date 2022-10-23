@@ -29,8 +29,10 @@ const DefaultPageDescription = () => {
           </AreaContent>
           <AreaContent>
             <P>
-              다음 생리 예정일을 알려드립니다. 생리 주기를 안다면 생리 주기
-              기준으로, 모른다면 최근 기록 기준으로 계산 방법을 선택해주세요.
+              다음 생리 예정일을 알려드립니다. <br />
+              <b>생리 주기</b>를 안다면 <b>생리 주기 기준</b>으로, 모른다면{' '}
+              <br />
+              <b>최근 기록 기준</b>으로 계산 방법을 선택해주세요.
             </P>
           </AreaContent>
         </AreaBox1>

@@ -20,8 +20,8 @@ export default theme;
 export const TitleH3 = styled.h3`
   font-style: normal;
   font-weight: 700;
-  font-size: 1.8em;
-  line-height: 1.8em;
+  font-size: 1.6em;
+  line-height: 1.6em;
 
   color: #222222;
 `;

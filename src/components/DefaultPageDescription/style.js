@@ -8,6 +8,8 @@ import {
 } from '../styleArea';
 
 export const AreaWrapper = styled(_AreaWrapper)`
+  height: 40%;
+
   background: ${theme.backgroundColor};
 `;
 export const AreaRow = styled(_AreaRow)``;
@@ -36,7 +38,8 @@ export const P = styled.p`
   margin: 0;
   padding: 0.5rem 0;
 
-  line-height: 1.5em;
+  font-weight: 400;
+  line-height: 1.6em;
 
   color: ${theme.fontGrey};
 `;
