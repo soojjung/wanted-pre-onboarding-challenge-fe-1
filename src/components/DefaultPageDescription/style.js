@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme, { TitleH3 as _TitleH3 } from '../../styles/theme';
+import theme from '../../styles/theme';
 import {
   AreaWrapper as _AreaWrapper,
   AreaRow as _AreaRow,
@@ -8,17 +8,30 @@ import {
 } from '../styleArea';
 
 export const AreaWrapper = styled(_AreaWrapper)`
-  height: 40%;
+  position: absolute;
 
-  background: ${theme.backgroundColor};
+  height: 40%;
 `;
 export const AreaRow = styled(_AreaRow)``;
 export const AreaBox1 = styled(_AreaBox1)``;
-export const AreaContent = styled(_AreaContent)``;
+export const AreaCenterContent = styled(_AreaContent)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-export const TitleH3 = styled(_TitleH3)`
+  min-width: 300px;
+`;
+
+export const TitleH1 = styled.h1`
   margin: 0;
   padding: 0.2rem 0;
+  padding-top: 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 1.4em;
 
   color: ${theme.fontTitle};
 `;
@@ -36,7 +49,7 @@ export const TitleH5 = styled.h5`
 
 export const P = styled.p`
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
 
   font-weight: 400;
   line-height: 1.6em;

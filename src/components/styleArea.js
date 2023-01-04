@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import theme from '../styles/theme';
 
 // css 정책 !!!!!
 // margin, pading, border 값은 아래 작성된 공통사항중에서만 셀렉해서 사용합니다--
@@ -29,6 +30,7 @@ export const AreaRow = React.memo(styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+
   :not(:nth-of-type(1)) {
     margin-top: ${DEFAULT_MARGIN}px;
   }
@@ -78,6 +80,31 @@ export const AreaBox4 = styled(AreaBox)`
 export const AreaFlexBox = styled(AreaBox)`
   display: flex;
 `;
+
+export const P = React.memo(styled.p`
+  color: ${theme.fontNavy}
+    ${(props) => {
+      if (props.color === 'blue') {
+        return css`
+          color: ${theme.blue};
+        `;
+      }
+    }};
+`);
+
+export const Button = React.memo(styled.button`
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  border: none;
+  border-radius: 16px;
+
+  font-size: 16px;
+
+  background: linear-gradient(#69d4fb, #1ebefa);
+  color: ${theme.white};
+`);
 
 const getAreaCssStr = (props) => {
   let cssStr = '';
