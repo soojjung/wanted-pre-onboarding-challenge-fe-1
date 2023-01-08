@@ -2,20 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import theme from '../styles/theme';
 
-// css 정책 !!!!!
-// margin, pading, border 값은 아래 작성된 공통사항중에서만 셀렉해서 사용합니다--
-// 폰트(+line-height)는 em 단위, padding과 margin은 px 단위를 사용합니다
-// 가장 큰거에다가 min-width를 넣고, 그 안에 박스들한테는 % width를 설정
-// 가장 큰 거에 shadow넣고 그안에는 두개이상일때 border 넣는걸로
 // 내부 패딩 적용하는 방법은 각자 padding-right 20을 넣고, last child에만 넣지 않는방식으로
-
-// border는 default가 #d4d8d9; 진한버전은 #9d9d9d;
-// 두꺼운 border는 2.5px solid #222222;
-// font-weight 400,500,700,900
-
-// 컴포넌트 구조 : Wrapper -> Row -> Box -> Row -> Box ... -> Content
-// 페이지별로 Wrapper는 하나만 존재하며, Content 안에는 하나의 컴포넌트만 존재합니다.
-
 const DEFAULT_MARGIN = 20;
 const DEFAULT_PADDING = 20;
 const DEFAULT_MINWIDTH = 350;
@@ -82,14 +69,14 @@ export const AreaFlexBox = styled(AreaBox)`
 `;
 
 export const P = React.memo(styled.p`
-  color: ${theme.fontNavy}
-    ${(props) => {
-      if (props.color === 'blue') {
-        return css`
-          color: ${theme.blue};
-        `;
-      }
-    }};
+  color: ${theme.fontNavy};
+  ${(props) => {
+    if (props.color === 'blue') {
+      return css`
+        color: ${theme.blue};
+      `;
+    }
+  }};
 `);
 
 export const Button = React.memo(styled.button`
