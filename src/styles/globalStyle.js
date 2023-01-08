@@ -13,15 +13,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
 
     font-family: 'SF Pro Display', sans-serif;
-    // color: #484848;
+  }
+
+  input {
+    font-family: 'Rowdies', cursive;
   }
 
   button {
     cursor: pointer;
-  }
-
-  body {
-    font-family: 'SF Pro Display', sans-serif
   }
 
   button {

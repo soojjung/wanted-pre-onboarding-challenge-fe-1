@@ -1,7 +1,5 @@
-# Period Calculator
+# 프리온보딩 챌린지
 
-## 실행 방법
+### 참가자 : 정수진
 
-1. 노드 버전 16.18.0 확인 `nvm use 16.18.0`
-2. `npm install`
-3. `npm start`
+프론트엔드 신입
